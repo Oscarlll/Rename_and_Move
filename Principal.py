@@ -93,7 +93,7 @@ def MoverArchivos():
         else:
             messagebox.showerror("Aviso","Falta el nombre de los archivos")
     else:
-        messagebox.showerror("Aviso", "falta la ruta de directiorios")
+        messagebox.showerror("Aviso", "falta la ruta de directorios")
 
 
     
