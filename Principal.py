@@ -47,8 +47,8 @@ def imprimirLista():
                 listawEBP.append(rutaLista[i])
             elif re.search(listFor[6], rutaLista[i]):
                 listaJPEG.append(rutaLista[i])
+        
         datos = ("\nJPG  : "+ str(len(listaJPG))) +("\nJPEG : "+ str(len(listaJPEG))) + ("\nPNG  : "+ str(len(listaPNG)))+("\nGIF  : "+ str(len(listaGIF)))+ ("\nWEBP : "+ str(len(listawEBP)))+ ("\nMP3  : "+ str(len(listaMP3)))+ ("\nMP4  : "+ str(len(listaMP4)))
-        print(len(textolista), "vacio")
         if len(textolista) != 0:
             textoscroll.delete("1.0","end")
             textoscroll.insert(END, datos)
@@ -87,7 +87,7 @@ def MoverArchivos():
                     if not seleccion == True and num < len(seleccion):
                         num += 1
                 messagebox.showinfo("mensaje", (num,"Archvos Movidos Exitosamente"))
-                print(seleccion, "  ", num)
+                
             else:
                 messagebox.showerror("Error", ("No hay archivos "+ formato +"\nNingun archivo movido"))
         else:
